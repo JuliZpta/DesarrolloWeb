@@ -63,6 +63,24 @@ body {
     max-width: 200px;
 }
 
-.flex-outer >li >label + *{
+.flex-outer >li >label + *,
+.flex-inner {
     flex: 1 0 220px;
+}
+
+.flex-outer li input:not([type='checkbox']),
+.flex-outer li textarea{
+    padding: 15px;
+    border: none;
+}
+
+.flex-outer li button{
+    background: rgb(18, 217, 231);
+    color: black;
+    margin: auto;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    letter-spacing: .09em;
+    font-weight: 800;
 }
