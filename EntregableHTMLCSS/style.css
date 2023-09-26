@@ -1,0 +1,62 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Estilos para la barra de navegación */
+header ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+header li {
+    margin-right: 20px;
+}
+
+header li:last-child {
+    margin-right: 0;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para las secciones principales */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.main > section {
+    flex: 1;
+}
+
+.main article {
+    background-color: #f4f4f4;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
