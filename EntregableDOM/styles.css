@@ -87,6 +87,16 @@ main {
     margin: 10px;
 }
 
+/* Estilos para deshabilitar la decoración de los enlaces */
+a {
+    text-decoration: none; /* Quita la línea subrayada */
+    color: inherit; /* Utiliza el color heredado del elemento padre (normalmente, el color del texto) */
+}
+
+/* Estilo adicional para los enlaces cuando se les hace hover (opcional) */
+a:hover {
+    text-decoration: underline; /* Agrega una línea subrayada al pasar el cursor sobre el enlace (opcional) */
+}
 
 footer {
     background-color: #333;

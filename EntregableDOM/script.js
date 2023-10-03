@@ -19,10 +19,14 @@ createAndAppend('h1', header, 'Cafex');
 const nav = createAndAppend('nav', header);
 const ul = createAndAppend('ul', nav);
 
-createAndAppend('li', ul, createAndAppend('a', ul, 'Inicio'));
-createAndAppend('li', ul, createAndAppend('a', ul, 'Menú'));
-createAndAppend('li', ul, createAndAppend('a', ul, 'Promociones')).setAttribute('href', '#promociones'); // Agregamos el atributo href
-createAndAppend('li', ul, createAndAppend('a', ul, 'Contacto'));
+const menuLink = createAndAppend('li', ul);
+createAndAppend('a', menuLink, 'Menú');
+menuLink.querySelector('a').setAttribute('href', '#menu'); // Anclar al ID "menu"
+
+const promocionesLink = createAndAppend('li', ul);
+createAndAppend('a', promocionesLink, 'Promociones');
+promocionesLink.querySelector('a').setAttribute('href', '#promociones'); // Anclar al ID "promociones"
+
 
 
 // Crear contenido principal
